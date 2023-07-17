@@ -59,6 +59,12 @@
             </li>
           </ul>
         </address>
+          <button type="button" class="nav-button js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+            <svg class="icon-head-button" width="32" height="32">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
       </div>
     </header>
 
@@ -146,6 +152,7 @@
                 src="./images/img1.jpg"
                 alt="monitor with an open website"
                 width="360"
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
               />
             </li>
             <li class="directions-list">
@@ -153,6 +160,7 @@
                 src="./images/img2.jpg"
                 alt="a phone with a mobile application"
                 width="360"
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
               />
             </li>
             <li class="directions-list">
@@ -160,6 +168,7 @@
                 src="./images/img3.jpg"
                 alt="a computer with a phone on which an adaptive website for the phone is displayed"
                 width="360"
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
               />
             </li>
           </ul>
@@ -177,6 +186,10 @@
                 src="./images/img-MarkGuerrero.jpg"
                 alt="Mark Guerrero's photo"
                 width="264"
+                srcset="
+                  ./images/img-MarkGuerrero.jpg    1x,
+                  ./images/img-MarkGuerrero@2x.jpg 2x
+                "
               />
               <div class="team-container">
                 <h3 class="team-title">Mark Guerrero</h3>
@@ -218,6 +231,10 @@
                 src="./images/img-TomFord.jpg"
                 alt="Tom Ford's photo"
                 width="264"
+                srcset="
+                  ./images/img-TomFord.jpg    1x,
+                  ./images/img-TomFord@2x.jpg 2x
+                "
               />
               <div class="team-container">
                 <h3 class="team-title">Tom Ford</h3>
@@ -259,6 +276,10 @@
                 src="./images/img-CamilaGarcia.jpg"
                 alt="Camila Garcia's photo"
                 width="264"
+                srcset="
+                  ./images/img-CamilaGarcia.jpg    1x,
+                  ./images/img-CamilaGarcia@2x.jpg 2x
+                "
               />
               <div class="team-container">
                 <h3 class="team-title">Camila Garcia</h3>
@@ -300,6 +321,10 @@
                 src="./images/img-DanielWilson.jpg"
                 alt="Daniel Wilson's photo"
                 width="264"
+                srcset="
+                  ./images/img-DanielWilson.jpg    1x,
+                  ./images/img-DanielWilson@2x.jpg 2x
+                "
               />
               <div class="team-container">
                 <h3 class="team-title">Daniel Wilson</h3>
@@ -547,6 +572,79 @@
       </div>
     </div>
 
+    <!-- меню  -->
+    <div class="menu mobile-menu" id="mobile-menu">
+      <button type="button" class="menu-close js-close-menu">
+          <svg class="icon-close-menu" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      <nav class="menu-nav">
+        <ul class="list menu-nav-list">
+          <li>
+            <a class="menu-list menu-list-hover link" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="menu-list link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="menu-list link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <!-- контакти компанії -->
+      <address class="menu-contact">
+        <ul class="list menu-contact-list">
+          <li>
+            <a class="menu-contact-phone link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="menu-contact-email link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="menu-social">
+        <ul class="list menu-social-list">
+          <li class="menu-social-item">
+            <a href="" target="_blank" class="link">
+              <svg class="footer-icon-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="" target="_blank" class="link">
+              <svg class="footer-icon-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="" target="_blank" class="link">
+              <svg class="footer-icon-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="" target="_blank" class="link">
+              <svg class="footer-icon-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
