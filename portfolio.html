@@ -20,34 +20,41 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
-
   </head>
 
   <body>
     <!-- верхня частина сайту хедер -->
     <header class="head">
-      <!-- навігація по сайту -->
       <div class="container head-container">
         <nav class="container-nav">
-          <!-- логотип компанії -->
           <a href="./index.html" class="logo link logo-sections-head"
             >Web<span class="logo-section">Studio</span></a
           >
+          <button
+            type="button"
+            class="nav-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="icon-head-button" width="32" height="32">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
           <ul class="list list-header">
             <li class="">
-              <a class="list-nav link" href="./index.html">Studio</a>
+              <a class="list-nav link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
-              <a class="list-nav link list-nav-hover" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="list-nav link list-nav-hover" href="./portfolio.html">Portfolio</a>
             </li>
             <li><a class="list-nav link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <!-- контакти компанії -->
+
         <address class="contact">
-          <ul class="list list-header">
+          <ul class="list list-contact">
             <li>
               <a class="contact-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -60,6 +67,75 @@
             </li>
           </ul>
         </address>
+      </div>
+
+
+      <div class="menu mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-close js-close-menu">
+          <svg class="icon-close-menu" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div>
+          <ul class="list menu-nav-list">
+          <li>
+            <a class="menu-list menu-list-hover link" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a class="menu-list link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="menu-list link" href="">Contacts</a></li>
+        </ul>
+        </div>
+
+        <div>
+          <ul class="list menu-contact-list">
+          <li>
+            <a class="menu-contact-phone link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="menu-contact-email link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="list menu-social-list">
+          <li class="menu-social-item">
+            <a href="" target="_blank" class="link">
+              <svg class="footer-icon-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="" target="_blank" class="link">
+              <svg class="footer-icon-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="" target="_blank" class="link">
+              <svg class="footer-icon-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="" target="_blank" class="link">
+              <svg class="footer-icon-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        </div>
       </div>
     </header>
     <!-- головна інформація сторінки -->
@@ -94,8 +170,8 @@
                     alt="Banking App"
                     width="360"
                     srcset="
-                      ./images/img-portfolio-1.jpg    1x,
-                      ./images/img-portfolio-1@2x.jpg 2x
+                      ./images/img-portfolio-1.jpg     1x,
+                      ./images/img-portfolio-1-2x..jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -118,8 +194,8 @@
                     alt="Cashless Payment"
                     width="360"
                     srcset="
-                      ./images/img-portfolio-2.jpg    1x,
-                      ./images/img-portfolio-2@2x.jpg 2x
+                      ./images/img-portfolio-2.jpg     1x,
+                      ./images/img-portfolio-2-2x..jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -143,7 +219,7 @@
                     width="360"
                     srcset="
                       ./images/img-portfolio-3.jpg    1x,
-                      ./images/img-portfolio-3@2x.jpg 2x
+                      ./images/img-portfolio-3-2x.jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -166,8 +242,8 @@
                     alt="Taxi Service"
                     width="360"
                     srcset="
-                      ./images/img-portfolio-4.jpg    1x,
-                      ./images/img-portfolio-4@2x.jpg 2x
+                      ./images/img-portfolio-4.jpg     1x,
+                      ./images/img-portfolio-4-2x..jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -190,8 +266,8 @@
                     alt="Screen Illustrations"
                     width="360"
                     srcset="
-                      ./images/img-portfolio-5.jpg    1x,
-                      ./images/img-portfolio-5@2x.jpg 2x
+                      ./images/img-portfolio-5.jpg     1x,
+                      ./images/img-portfolio-5-2x..jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -214,8 +290,8 @@
                     alt="Online Courses"
                     width="360"
                     srcset="
-                      ./images/img-portfolio-6.jpg    1x,
-                      ./images/img-portfolio-6@2x.jpg 2x
+                      ./images/img-portfolio-6.jpg     1x,
+                      ./images/img-portfolio-6.-2x.jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -238,8 +314,8 @@
                     alt="Instagram Stories Concept"
                     width="360"
                     srcset="
-                      ./images/img-portfolio-7.jpg    1x,
-                      ./images/img-portfolio-7@2x.jpg 2x
+                      ./images/img-portfolio-7.jpg     1x,
+                      ./images/img-portfolio-7-2x..jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -262,8 +338,8 @@
                     alt="Organic Food"
                     width="360"
                     srcset="
-                      ./images/img-portfolio-8.jpg    1x,
-                      ./images/img-portfolio-8@2x.jpg 2x
+                      ./images/img-portfolio-8.jpg     1x,
+                      ./images/img-portfolio-8-2x..jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -286,8 +362,8 @@
                     alt="Fresh Coffee"
                     width="360"
                     srcset="
-                      ./images/img-portfolio-9.jpg    1x,
-                      ./images/img-portfolio-9@2x.jpg 2x
+                      ./images/img-portfolio-9.jpg     1x,
+                      ./images/img-portfolio-9-2x..jpg 2x
                     "
                   />
                   <p class="project-taxt-animation">
@@ -309,7 +385,6 @@
 
     <!-- футер -->
     <footer class="footer">
-      <!-- логотип компанії -->
       <div class="container footer-social-media">
         <div class="footer-container-logo">
           <a href="./index.html" class="logo link footer-logo-sections"
