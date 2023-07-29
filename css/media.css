@@ -2,8 +2,41 @@
   .container {
     max-width: 428px;
   }
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/ipad.jpg);
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/ipad-2x..jpg);
+    }
+  }
 }
+@media screen and (max-width: 416px) {
+  .hero-main {
+    /* font-size: 30px; */
+  }
+  .menu-contact-phone {
+    font-size: 25px;
+    line-height: 1,5;
+  }
+  .menu-social-list {
 
+  }
+}
+@media screen () {
+  
+}
 /* --------------IPAD-------------- */
 
 @media screen and (min-width: 768px) {
@@ -94,14 +127,14 @@
   .contact-link:focus {
     color: #404bbf;
   }
-
-  .hero {
+.hero {
+    max-width: 1440px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/ipad.jpg);
+      url(../images/people-office.jpg);
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero {
@@ -110,9 +143,10 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/ipad-2x..jpg);
+        url(../images/people-office-2x.jpg);
     }
   }
+  
   .hero-main {
     font-size: 56px;
     line-height: 1.07;
@@ -122,7 +156,7 @@
     text-align: left;
   }
   .facts-taxt {
-    font-weight: 500;
+    /* font-weight: 500; */
   }
   .facts-lid {
     gap: 72px 24px;
@@ -220,22 +254,6 @@
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-  }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .hero {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office-2x.jpg);
-    }
   }
   .hero-main {
     margin-bottom: 48px;
@@ -269,7 +287,8 @@
     padding-bottom: 120px;
   }
   .directions-section {
-    display: inline;
+    display: block;
+    padding-bottom: 120px;
   }
   .team-section {
     padding-top: 120px;
@@ -295,6 +314,7 @@
     display: flex;
     width: 100%;
     height: 112px;
+    gap: 0;
   }
   .footer-container-logo {
     align-items: flex-start;
