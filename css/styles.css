@@ -1019,8 +1019,8 @@ img {
   width: 396px;
 }
 .animation img {
-  width: 396px;
-  height: 280px;
+  /* width: 396px;
+  height: 280px; */
 }
 .list-portfolio-item {
   /* width: calc((100% - 48px) / 3); */
